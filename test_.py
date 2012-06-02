@@ -2,17 +2,17 @@
 
 import unittest as ut
 
-import f
+import analysis as f
 
 class DataLoaderTester(ut.TestCase):
 
-    def setUp():
+    def setUp(self):
         '''
         
         '''
-        dl = f.DataLoader('eurgpb.txt')
+        self.dl = f.DataLoader()
     
-    def test_load_data():
+    def test_load_data(self):
         '''
         правильные данные - на выходе матрица значений, 
         из одного большого списка, и много маленьких, вложенных:
@@ -28,6 +28,9 @@ class DataLoaderTester(ut.TestCase):
         вектора, равно количеству элементов произвольного
         значения, из того же ряда)
         '''
-        loaded = dl.load_data()
+        loaded = self.dl.load_data('./fin_data/eurgpb.txt')
         self.assertEqual(type(loaded), type([]))
-        self.assertEqual(type(loaded[0], type([]))
+        self.assertEqual(type(loaded[0]), type([]))
+        
+if __name__ == '__main__':
+    ut.main()
