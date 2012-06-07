@@ -31,6 +31,7 @@ class DataLoaderTester(ut.TestCase):
         loaded = self.dl.load_data('./fin_data/eurgpb.txt')
         self.assertEqual(type(loaded), type([]))
         self.assertEqual(type(loaded[0]), type([]))
+
         
 if __name__ == '__main__':
     ut.main()
