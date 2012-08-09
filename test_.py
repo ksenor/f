@@ -10,6 +10,7 @@ class DataLoaderTester(ut.TestCase):
         '''
         
         '''
+        
         self.dl = f.DataLoader()
     
     def test_load_data(self):
@@ -28,6 +29,7 @@ class DataLoaderTester(ut.TestCase):
         вектора, равно количеству элементов произвольного
         значения, из того же ряда)
         '''
+        
         loaded = self.dl.load_data('./fin_data/eurgpb.txt')
         self.assertEqual(type(loaded), type([]))
         self.assertEqual(type(loaded[0]), type([]))
