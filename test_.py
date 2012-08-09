@@ -1,5 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
-
+ 
 import unittest as ut
 
 import analysis as f
