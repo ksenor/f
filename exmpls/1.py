@@ -1,3 +1,4 @@
+# encoding: utf8
 # http://pyevolve.sourceforge.net/wordpress/?p=862
 # To test the GA core I’ve used this source-code (a simple sphere function):
 

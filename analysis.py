@@ -32,7 +32,7 @@ class DataCreater():
     >>> for pos, vec in enumeration(data_list1):
     ...   for pos, elem in enumeration(vec):
     ...     if elem == ...
-    # короче цель - все значения fails_counter по-нулям..
+    # короче цель - все значения fails_counter - по-нулям..
     # если вектор полностью совпадает - добавляем в счетчик.
     # считаем и по относительным значения цель достигнута 
     # - если все по-нулям
